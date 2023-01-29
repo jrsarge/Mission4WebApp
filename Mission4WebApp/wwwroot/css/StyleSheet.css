@@ -1,0 +1,9 @@
+﻿img{
+    width: 300px;
+    border: 2px solid #ff00dc;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+}
