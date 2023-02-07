@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+@*brings in the favicon and styling and data using razor code for every page*@
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="img/Smiley.svg.png">
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link href="lib/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+@*Sets up nav bar*@
+<body>
+
+    <nav>
+        <a asp-controller="Basic" asp-action="Index">Home</a>
+        <a asp-controller="Basic" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="lib/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+</body>
+
+</html>

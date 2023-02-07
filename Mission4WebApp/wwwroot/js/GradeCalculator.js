@@ -68,6 +68,6 @@
     }
 
     //Output the result
-    $('#output').text(String(finalGrade) + '%, ' + letterGrade);
-        
+    //$('#output').text(String(finalGrade) + '%, ' + letterGrade);
+    alert(String(finalGrade + '% ' + letterGrade));
 })  
